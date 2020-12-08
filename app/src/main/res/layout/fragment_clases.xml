@@ -4,12 +4,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#F44336"
+    android:layout_marginTop="50dp"
     tools:context=".fragments.ClasesFragment">
 
     <TextView
+        android:text="Estado actual de tus trabajos con las clases..."
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:background="#2E2D2D"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="Clases"
-        android:textSize="30sp" />
+        android:layout_height="wrap_content"/>
+
+    <ListView
+        android:id="@+id/lista"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </LinearLayout>

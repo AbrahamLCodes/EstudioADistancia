@@ -53,6 +53,11 @@ public class PendienteFragment extends Fragment implements AdapterView.OnItemCli
         initComponents(view);
     }
 
+    @Override
+    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+        Toast.makeText(getContext(), ""+i, Toast.LENGTH_SHORT).show();
+    }
+
     private void initComponents(View v) {
         lista = v.findViewById(R.id.lista);
         lista.setAdapter(new PendienteAdapter(
@@ -61,10 +66,5 @@ public class PendienteFragment extends Fragment implements AdapterView.OnItemCli
                 pendientes
         ));
         lista.setOnItemClickListener(this);
-    }
-
-    @Override
-    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-        Toast.makeText(getContext(), ""+i, Toast.LENGTH_SHORT).show();
     }
 }
