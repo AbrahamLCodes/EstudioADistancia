@@ -1,10 +1,10 @@
 package android.apps.estudioadistancia.modeldata;
 
-public class Pendiente {
+public class Pdf {
 
     String titulo, fecha, materia, link;
 
-    public Pendiente(String titulo, String fecha, String materia, String link){
+    public Pdf(String titulo, String fecha, String materia, String link){
         this.titulo = titulo;
         this.fecha = fecha;
         this.materia = materia;

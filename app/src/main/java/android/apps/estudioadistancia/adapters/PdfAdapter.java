@@ -2,7 +2,7 @@ package android.apps.estudioadistancia.adapters;
 
 import android.app.Activity;
 import android.apps.estudioadistancia.R;
-import android.apps.estudioadistancia.modeldata.Pendiente;
+import android.apps.estudioadistancia.modeldata.Pdf;
 import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,13 +12,13 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-public class PendienteAdapter extends ArrayAdapter<Pendiente> {
+public class PdfAdapter extends ArrayAdapter<Pdf> {
 
-    private Pendiente[] objects;
+    private Pdf[] objects;
     private Context context;
     private int resource;
 
-    public PendienteAdapter(@NonNull Context context, int resource, @NonNull Pendiente[] objects){
+    public PdfAdapter(@NonNull Context context, int resource, @NonNull Pdf[] objects){
         super(context, resource, objects);
 
         this.objects = objects;

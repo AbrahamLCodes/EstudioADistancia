@@ -1,7 +1,7 @@
 package android.apps.estudioadistancia.fragments;
 
-import android.apps.estudioadistancia.adapters.PendienteAdapter;
-import android.apps.estudioadistancia.modeldata.Pendiente;
+import android.apps.estudioadistancia.adapters.PdfAdapter;
+import android.apps.estudioadistancia.modeldata.Pdf;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -21,18 +21,18 @@ import android.widget.Toast;
 public class PendienteFragment extends Fragment implements AdapterView.OnItemClickListener {
 
     private ListView lista;
-    private Pendiente[] pendientes = {
-            new Pendiente(
+    private Pdf[] pdfs = {
+            new Pdf(
                     "The C Programming Language",
                     "23/Enero/2021",
                     "Fundamentos de Programacion",
                     "http://mef-lab.com/osnove-2016/C-Programming-Ebook.pdf"),
-            new Pendiente(
+            new Pdf(
                     "Fundamentos de Bases de Datos",
                     "10/Febrero/2021",
                     "Fundamentos de Bases de Datos",
                     "http://ceneval.isi.uson.mx/CENEVAL/4Implantacion%20de%20infraestructura/Fundamentos%20de%20base%20de%20datos.pdf"),
-            new Pendiente(
+            new Pdf(
                     "Fundamentos de Telecomunicaciones",
                     "28/Enero/2021",
                     "Fundamentos de Telecomunicaciones,",
@@ -60,10 +60,10 @@ public class PendienteFragment extends Fragment implements AdapterView.OnItemCli
 
     private void initComponents(View v) {
         lista = v.findViewById(R.id.lista);
-        lista.setAdapter(new PendienteAdapter(
+        lista.setAdapter(new PdfAdapter(
                 getContext(),
-                R.layout.adapter_pendientes,
-                pendientes
+                R.layout.adapter_pdf,
+                pdfs
         ));
         lista.setOnItemClickListener(this);
     }
