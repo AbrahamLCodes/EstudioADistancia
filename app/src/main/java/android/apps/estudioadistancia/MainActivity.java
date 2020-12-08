@@ -1,4 +1,4 @@
-package marshmallow.wwar.estudioadistancia;
+package android.apps.estudioadistancia;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,10 +15,10 @@ import android.widget.TextView;
 
 import com.google.android.material.navigation.NavigationView;
 
-import marshmallow.wwar.estudioadistancia.fragments.ClasesFragment;
-import marshmallow.wwar.estudioadistancia.fragments.CreditosFragment;
-import marshmallow.wwar.estudioadistancia.fragments.LeidosFragment;
-import marshmallow.wwar.estudioadistancia.fragments.PendienteFragment;
+import android.apps.estudioadistancia.fragments.ClasesFragment;
+import android.apps.estudioadistancia.fragments.CreditosFragment;
+import android.apps.estudioadistancia.fragments.LeidosFragment;
+import android.apps.estudioadistancia.fragments.PendienteFragment;
 
 public class MainActivity extends AppCompatActivity implements
         View.OnClickListener,

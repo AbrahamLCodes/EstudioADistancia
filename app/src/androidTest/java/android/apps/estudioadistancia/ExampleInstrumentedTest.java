@@ -1,4 +1,4 @@
-package marshmallow.wwar.estudioadistancia;
+package android.apps.estudioadistancia;
 
 import android.content.Context;
 

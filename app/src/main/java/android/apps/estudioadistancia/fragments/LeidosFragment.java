@@ -1,4 +1,4 @@
-package marshmallow.wwar.estudioadistancia.fragments;
+package android.apps.estudioadistancia.fragments;
 
 import android.os.Bundle;
 
@@ -10,7 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import marshmallow.wwar.estudioadistancia.R;
+import android.apps.estudioadistancia.R;
 
 public class LeidosFragment extends Fragment {
 
