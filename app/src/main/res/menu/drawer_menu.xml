@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Opciones">
+        <menu>
+            <item
+                android:id="@+id/itemPendiente"
+                android:fontFamily="@font/helvetica"
+                android:icon="@drawable/todolist"
+                android:title="Tareas pendientes" />
+
+            <item
+                android:id="@+id/itemClases"
+                android:fontFamily="@font/helvetica"
+                android:icon="@android:drawable/ic_input_get"
+                android:title="Clases" />
+            <item
+                android:id="@+id/itemLeidos"
+                android:fontFamily="@font/helvetica"
+                android:icon="@drawable/history"
+                android:title="PDFs leídos" />
+            <item
+                android:id="@+id/itemCreditos"
+                android:fontFamily="@font/helvetica"
+                android:icon="@android:drawable/btn_star_big_on"
+                android:title="Créditos" />
+        </menu>
+    </item>
+</menu>
