@@ -9,7 +9,7 @@
     tools:context=".fragments.LeidosFragment">
 
     <TextView
-        android:text="PDFs leidos"
+        android:text="PDFs leídos"
         android:textColor="#fff"
         android:textStyle="bold"
         android:textSize="20sp"

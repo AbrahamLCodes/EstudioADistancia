@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@layout/shape_pendientes"
-    android:orientation="horizontal"
-    android:padding="10dp">
+    android:orientation="horizontal">
 
     <LinearLayout
         android:layout_width="0dp"
-        android:layout_weight="7"
         android:layout_height="wrap_content"
+        android:layout_weight="7"
         android:orientation="horizontal">
 
         <ImageView
+            android:src="@drawable/homework"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:padding="10dp"
-            android:src="@drawable/homework" />
+            android:padding="10dp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -25,41 +25,41 @@
 
             <TextView
                 android:id="@+id/titulo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
                 android:text="Titulo del PDF"
+                android:textStyle="bold"
                 android:textColor="#000"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
 
             <TextView
                 android:id="@+id/fecha"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
                 android:text="Fecha del PDF"
                 android:textColor="#000"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
 
             <TextView
                 android:id="@+id/materia"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
                 android:text="Materia del PDF"
                 android:textColor="#000"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
         </LinearLayout>
     </LinearLayout>
 
     <ImageView
-        android:src="@drawable/uncheck"
+        android:src="@drawable/check"
         android:layout_width="0dp"
         android:layout_weight="3"
         android:layout_height="70dp"
         android:layout_gravity="center"
         android:padding="10dp"/>
-
 
 </LinearLayout>

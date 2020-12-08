@@ -61,7 +61,7 @@ public class LeidosFragment extends Fragment implements AdapterView.OnItemClickL
         lista = v.findViewById(R.id.lista);
         lista.setOnItemClickListener(this);
         lista.setAdapter(
-                new PdfAdapter(getContext(),R.layout.adapter_pdf, pdfs)
+                new PdfAdapter(getContext(),R.layout.adapter_leidos, pdfs)
         );
     }
 }

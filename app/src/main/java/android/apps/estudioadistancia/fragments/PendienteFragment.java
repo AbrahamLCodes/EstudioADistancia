@@ -55,7 +55,12 @@ public class PendienteFragment extends Fragment implements AdapterView.OnItemCli
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-        Toast.makeText(getContext(), ""+i, Toast.LENGTH_SHORT).show();
+        openDialog(pdfs[i].getLink());
+    }
+
+    private void openDialog(String l) {
+        Dialogo dialogo = new Dialogo(l);
+        dialogo.show(getFragmentManager(), "Abrir PDF");
     }
 
     private void initComponents(View v) {
