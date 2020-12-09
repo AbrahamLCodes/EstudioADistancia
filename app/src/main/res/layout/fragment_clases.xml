@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#F44336"
-    android:layout_marginTop="50dp"
     tools:context=".fragments.ClasesFragment">
 
     <TextView
