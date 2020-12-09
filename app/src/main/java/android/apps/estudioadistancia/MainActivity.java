@@ -7,6 +7,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.apps.estudioadistancia.fragments.NovedadesFragment;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -45,8 +46,8 @@ public class MainActivity extends AppCompatActivity implements
         toggleDrawer.setOnClickListener(this);
         navview.setNavigationItemSelectedListener(this);
 
-        titulo.setText("Tareas Pendientes");
-        changeFragment(new PendienteFragment());
+        titulo.setText("Novedades");
+        changeFragment(new NovedadesFragment());
     }
 
     @Override
@@ -61,6 +62,10 @@ public class MainActivity extends AppCompatActivity implements
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
+            case R.id.itemNovedades:
+                changeFragment(new NovedadesFragment());
+                titulo.setText("Novedades");
+                break;
             case R.id.itemPendiente:
                 changeFragment(new PendienteFragment());
                 titulo.setText("Tareas Pendientes");

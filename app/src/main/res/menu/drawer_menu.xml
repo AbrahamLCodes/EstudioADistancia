@@ -5,6 +5,13 @@
 
     <item android:title="Opciones">
         <menu>
+
+            <item
+                android:id="@+id/itemNovedades"
+                android:fontFamily="@font/helvetica"
+                android:icon="@drawable/news"
+                android:title="Novedades" />
+
             <item
                 android:id="@+id/itemPendiente"
                 android:fontFamily="@font/helvetica"

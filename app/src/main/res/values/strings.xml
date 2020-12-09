@@ -2,4 +2,6 @@
     <string name="app_name">Estudio A Distancia</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navegacion">Abre el menú de navegación de la esquina superior izquierda de tu pantalla
+    para poder visualizar y con un click, navegar hacia la pantalla que necesites.</string>
 </resources>
