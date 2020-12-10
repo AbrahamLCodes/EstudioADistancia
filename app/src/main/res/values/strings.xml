@@ -4,4 +4,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="navegacion">Abre el menú de navegación de la esquina superior izquierda de tu pantalla
     para poder visualizar y con un click, navegar hacia la pantalla que necesites.</string>
+    <string name="objetivo">Esta App fue creada con el propósito de crear un prototipo funcional
+    para la materia de Taller de Investigación 2. El objetivo de este prototipo es simular una
+    plataforma móvil para el aprendizaje a distancia.</string>
 </resources>

@@ -6,11 +6,124 @@
     android:orientation="vertical"
     tools:context=".fragments.CreditosFragment">
 
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="Creditos"
-        android:textSize="30sp" />
+        android:fillViewport="true">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:fontFamily="@font/helvetica"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Esta sección es para dar créditos a los desarrolladores"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/helvetica"
+                android:padding="10dp"
+                android:text="@string/objetivo"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/helvetica"
+                android:padding="10dp"
+                android:text="Programador de algoritmos:"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="@font/helvetica"
+                android:padding="10dp"
+                android:text="Erik Efrén Ochoa Gonzáles"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/helvetica"
+                android:padding="10dp"
+                android:text="Programadora de interfaces"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="@font/helvetica"
+                android:padding="10dp"
+                android:text="Laryssa Paulina Ríos Bravo"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/helvetica"
+                android:padding="10dp"
+                android:text="Agradecimientos especiales a:"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="@font/helvetica"
+                android:padding="10dp"
+                android:text="Nuestro docente, el Maestro Alonso Bassanetti Villalobos"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/helvetica"
+                android:padding="10dp"
+                android:gravity="center"
+                android:text="Instituto Tecnológico de Chihuahua II"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/helvetica"
+                android:padding="10dp"
+                android:gravity="center"
+                android:text="Ingeniería Informática"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:src="@drawable/logosinfondo"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:padding="10dp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
