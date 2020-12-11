@@ -17,11 +17,13 @@ import androidx.appcompat.app.AppCompatDialogFragment;
 
 public class Dialogo extends AppCompatDialogFragment implements View.OnClickListener {
 
-    private TextView no, si;
+    private TextView no, si, titulo;
     private String link;
+    private String mensaje;
 
-    public Dialogo(String link) {
+    public Dialogo(String link, String mensaje) {
         this.link = link;
+        this.mensaje = mensaje;
     }
 
     @Nullable
@@ -37,9 +39,12 @@ public class Dialogo extends AppCompatDialogFragment implements View.OnClickList
 
         no = view.findViewById(R.id.no);
         si = view.findViewById(R.id.si);
+        titulo = view.findViewById(R.id.mensaje);
 
         no.setOnClickListener(this);
         si.setOnClickListener(this);
+
+        titulo.setText(mensaje);
     }
 
     @Override

@@ -23,21 +23,15 @@ public class PendienteFragment extends Fragment implements AdapterView.OnItemCli
     private ListView lista;
     private Pdf[] pdfs = {
             new Pdf(
-                    "The C Programming Language",
-                    "23/Enero/2021",
-                    "Fundamentos de Programacion",
-                    "http://mef-lab.com/osnove-2016/C-Programming-Ebook.pdf"),
+                    "Lengua Materna Español Primer Grado",
+                    "5/Sept/2020",
+                    "Lengua Materna",
+                    "https://libros.conaliteg.gob.mx/20/P1ESA.htm"),
             new Pdf(
+                    "Conocimiento del Medio Primer Grado",
+                    "15/Sept/2020",
                     "Fundamentos de Bases de Datos",
-                    "10/Febrero/2021",
-                    "Fundamentos de Bases de Datos",
-                    "http://ceneval.isi.uson.mx/CENEVAL/4Implantacion%20de%20infraestructura/Fundamentos%20de%20base%20de%20datos.pdf"),
-            new Pdf(
-                    "Fundamentos de Telecomunicaciones",
-                    "28/Enero/2021",
-                    "Fundamentos de Telecomunicaciones,",
-                    "https://www.itmerida.mx/panel/posgrado/archivos/mi/Fundamentos%20de%20Telecomunicaciones%20Unidad%201%20(1).pdf")
-
+                    "https://libros.conaliteg.gob.mx/20/P1COA.htm")
     };
 
     @Override
@@ -59,7 +53,7 @@ public class PendienteFragment extends Fragment implements AdapterView.OnItemCli
     }
 
     private void openDialog(String l) {
-        Dialogo dialogo = new Dialogo(l);
+        Dialogo dialogo = new Dialogo(l,"¿Abrir PDF?");
         dialogo.show(getFragmentManager(), "Abrir PDF");
     }
 

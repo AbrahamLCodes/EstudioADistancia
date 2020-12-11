@@ -12,37 +12,24 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.apps.estudioadistancia.R;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
-public class NovedadesFragment extends Fragment{
+public class NovedadesFragment extends Fragment implements AdapterView.OnItemClickListener {
 
     private ListView lista;
     private Notificacion [] notificaciones = {
             new Notificacion(
-                    "Suspensión de labores docentes",
-                    "23/Sep/2020",
-                    "9:00 A.M",
-                    "Servicios Escolares"),
+                    "Tarea para los padres de familia",
+                    "12/Oct/2020",
+                    "11:00 A.M",
+                    "Educación Socio Emocional"),
             new Notificacion(
-                    "Aprobaste la II Unidad",
-                    "29/Oct/2020",
+                    "Aprendizajes Claves",
+                    "8/Oct/2020",
                     "12:00 A.M",
-                    "Fundamentos de Bases de Datos"),
-            new Notificacion(
-                    "Nueva tarea asignada",
-                    "Hoy",
-                    "3:30 P.M",
-                    "Servicios Escolares"),
-            new Notificacion(
-                    "Nueva tarea asignada",
-                    "Ayer",
-                    "3:00 P.M",
-                    "Cálculo Integral"),
-            new Notificacion(
-                    "Nueva tarea asignada",
-                    "Hoy",
-                    "11:37 A.M",
-                    "Fund. De programación"),
+                    "Educacion Socio Emocional")
     };
 
     @Override
@@ -58,6 +45,19 @@ public class NovedadesFragment extends Fragment{
         initComponents(view);
     }
 
+    @Override
+    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+        if(i == 1) {
+            String link = "https://www.planyprogramasdestudio.sep.gob.mx/descargables/biblioteca/primaria/1grado/V-i-EDUCACION-SOCIOEMOCIONAL.pdf";
+            openDialog(link);
+        }
+    }
+
+    private void openDialog(String l) {
+        Dialogo dialogo = new Dialogo(l,"¿Abrir PDF?");
+        dialogo.show(getFragmentManager(), "Abrir PDF");
+    }
+
     private void initComponents(View v){
         lista = v.findViewById(R.id.lista);
         lista.setAdapter(new NotificacionAdapter(
@@ -65,5 +65,6 @@ public class NovedadesFragment extends Fragment{
                 R.layout.adapter_notificacion,
                 notificaciones
         ));
+        lista.setOnItemClickListener(this);
     }
 }

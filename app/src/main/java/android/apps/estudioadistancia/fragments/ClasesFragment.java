@@ -22,11 +22,11 @@ public class ClasesFragment extends Fragment implements AdapterView.OnItemClickL
 
     private ListView lista;
     private Clase[] clases = {
-            new Clase("Fundamentos de Programacion","4"),
-            new Clase("Fundamentos de Bases de Datos","1"),
-            new Clase("Fundamentos de Telecomunicaciones","3"),
-            new Clase("Cálculo Integral","0"),
-            new Clase("Física","0"),
+            new Clase("Matemáticas","3"),
+            new Clase("Lengua Materna","1"),
+            new Clase("Conocimiento del Medio","2"),
+            new Clase("Formacion Civica y Etica","2"),
+            new Clase("Física","4")
     };
 
     @Override
